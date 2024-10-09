@@ -10,6 +10,16 @@ module.exports = {
   settings: { react: { version: '18.2' } },
   plugins: ['react-refresh'],
   rules: {
+
+    // React
     'react-refresh/only-export-components': 'warn',
+
+    // MUI
+    'no-restricted-imports': [
+      'error',
+      {
+        'patterns': ['@mui/*/*/*']
+      }
+    ]
   },
 }
